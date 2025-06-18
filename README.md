@@ -1,1 +1,1 @@
-# OCR-P7-Kasa
+# P7-Kasa
