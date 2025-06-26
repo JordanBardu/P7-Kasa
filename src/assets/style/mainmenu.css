@@ -1,10 +1,14 @@
 .main-menu ul {
     list-style: none;
+    gap: 20px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+}
+
+a {
+    color: rgba(0, 0, 0, 1);
 }
 
 a.active {
-    color: yellow;
+    text-decoration: underline;
 }

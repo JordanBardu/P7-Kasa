@@ -1,5 +1,7 @@
+import MainBanner from "../../components/MainBanner/index.jsx";
+
 function About() {
-  return <h1>A propos</h1>;
+  return <MainBanner />;
 }
 
 export default About;
