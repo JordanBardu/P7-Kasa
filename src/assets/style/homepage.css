@@ -6,17 +6,16 @@
 }
 
 .main-banner-container {
-    height: 23%;
-    width: 90%;
+    height: 14%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-    background-image: url("../../assets/images/homebanner.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    margin-top: 9%;
+    position: absolute;
+    margin-top: 11%;
 }
 
 /* TODO: Faire le test avec un texte long */
@@ -36,11 +35,10 @@
 }
 
 .grid-container {
-    width: 90%;
     height: auto;
     position: absolute;
     background-color: rgba(246, 246, 246, 1);
-    margin-top: 22%;
+    margin-top: 29%;
     border-radius: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

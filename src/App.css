@@ -1,8 +1,0 @@
-/*TODO: revoir le placement du menu*/
-.main-menu {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 4%;
-}

@@ -78,7 +78,6 @@ button:focus-visible {
   }
 }
 
-
 /*TODO: Faire en sorte que le footer soit en bas de la page*/
 .footer {
   position: fixed;
@@ -87,4 +86,9 @@ button:focus-visible {
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 1);
+}
+
+.main-container {
+  width: 90%;
+  max-width: 1450px;
 }
