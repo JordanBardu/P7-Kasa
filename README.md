@@ -1,5 +1,6 @@
 # P7-Kasa
 
 
-## TODO 
-- Renommer content.json
+## TODO
+- Assombrir bannière 
+- Vérifier 404 

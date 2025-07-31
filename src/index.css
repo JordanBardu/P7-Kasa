@@ -92,3 +92,11 @@ button:focus-visible {
   width: 90%;
   max-width: 1450px;
 }
+
+.grey-filter {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
