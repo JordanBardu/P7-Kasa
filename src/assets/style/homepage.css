@@ -36,13 +36,14 @@
     height: auto;
     position: absolute;
     background-color: rgba(246, 246, 246, 1);
-    margin-top: 29%;
+    margin-top: 22%;
     border-radius: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    column-gap: 60px;
-    row-gap: 50px;
+    row-gap: 40px;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 
 .card {
@@ -69,4 +70,5 @@
     width: 100%;
     display: flex;
     align-items: flex-end;
+    border-radius: 10px;
 }

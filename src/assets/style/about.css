@@ -1,6 +1,6 @@
 .main-collapse-container {
   position: absolute;
-  margin-top: 30%;
+  margin-top: 23%;
   width: 75%;
 }
 
@@ -9,11 +9,11 @@
   border-radius: 5px;
   background-color: rgba(255, 96, 96, 1);
   color: rgba(255, 255, 255, 1);
-  padding-left: 1%;
   display: flex;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  justify-content: space-between;
+  padding: 10px 10px 10px 1%;
+  z-index: 2;
 }
 
 .collapse-title {
@@ -22,8 +22,17 @@
   font-size: 24px;
 }
 
+.collapse-content-show {
+  background-color: rgba(246, 246, 246, 0.45);
+  border-radius: 0px 0px 5px 5px;
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: -55px;
+  z-index: -1;
+}
+
 .collapse-content {
-  max-height: 0;
   display: none;
   height: auto;
   background-color: rgba(246, 246, 246, 1);
@@ -43,4 +52,7 @@
   height: auto;
   display: block;
   transform: translateY(0);
+}
+
+.arrow-container {
 }

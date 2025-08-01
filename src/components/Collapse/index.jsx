@@ -11,6 +11,11 @@ function Collapse({ title, type, content }) {
     <div className="collapse-container">
       <div className="collapse-title-container" onClick={handleCollapse}>
         <h2 className="collapse-title">{title}</h2>
+        <img
+          className="arrow-container"
+          src="../../assets/images/arrow.png"
+          alt="Flèche de déroulement"
+        />
       </div>
       <div className="collapse-content-container">
         <div
