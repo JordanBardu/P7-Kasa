@@ -6,6 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
 .notfound-title {

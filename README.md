@@ -2,6 +2,8 @@
 
 
 ## TODO
-- Fix position du menu ou du contenu sur certaines pages à cause de main-container
-- Faire le systeme de rating
+- Faire le composant de rating
+- Faire le carrousel
 - Eviter les duplicatas css (par ex pour le style de collapse)
+- Enlever commentaires
+- Centrer homepage

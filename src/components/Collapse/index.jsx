@@ -1,4 +1,5 @@
 import { useState } from "react";
+import arrowSrc from "../../assets/images/arrow.png";
 
 function Collapse({ title, type, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,7 @@ function Collapse({ title, type, content }) {
         <h2 className="collapse-title">{title}</h2>
         <img
           className="arrow-container"
-          src="../../assets/images/arrow.png"
+          src={arrowSrc}
           alt="Flèche de déroulement"
         />
       </div>

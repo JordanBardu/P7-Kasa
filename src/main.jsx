@@ -12,14 +12,22 @@ import NotFound from "./pages/NotFound/index.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <MainMenu />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/housing/:housingId" element={<Housing />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
+      <div className="layout">
+        <div
+          style={{
+            width: "100%",
+          }}
+        >
+          <MainMenu />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/housing/:housingId" element={<Housing />} />
+            <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   </StrictMode>,
 );

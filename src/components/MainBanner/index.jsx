@@ -9,8 +9,7 @@ function MainBanner({ bannerText, imageSrc }) {
         backgroundPosition: "center",
       }}
     >
-      <div className="grey-filter"></div>
-      {bannerText && <h1>{bannerText}</h1>}
+      <div className="grey-filter">{bannerText && <h1>{bannerText}</h1>}</div>
     </div>
   );
 }
