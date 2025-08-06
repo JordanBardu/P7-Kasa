@@ -4,45 +4,29 @@ import Collapse from "../../components/Collapse/index.jsx";
 import NotFound from "../NotFound/index.jsx";
 import "../../assets/style/housing.css";
 import HousingRating from "../../components/HousingRating/index.jsx";
-import { useState } from "react";
+import Gallery from "../../components/Gallery/index.jsx";
 
 function Housing() {
   let params = useParams();
   const id = params.housingId;
   const selectedHousing = logements.find((logement) => logement.id === id);
-  const [currentPictureIndex, setCurrentPictureIndex] = useState(0);
 
   if (!selectedHousing) {
     return <NotFound />;
   }
 
-  const handleNextPicture = () => {
-    setCurrentPictureIndex(
-      currentPictureIndex < selectedHousing.pictures.length - 1
-        ? currentPictureIndex + 1
-        : 0,
-    );
-  };
-
-  const handlePreviousPicture = () => {
-    setCurrentPictureIndex(
-      currentPictureIndex > 0
-        ? currentPictureIndex - 1
-        : selectedHousing.pictures.length - 1,
-    );
-  };
-
   return (
     <div className="main-housing-container">
-      <div
-        className="housing-cover"
-        style={{
-          backgroundImage: `url(${selectedHousing.pictures[currentPictureIndex]})`,
-        }}
-      >
-        <div className="arrow-back" onClick={handleNextPicture}></div>
-        <div className="arrow-next" onClick={handlePreviousPicture}></div>
-      </div>
+      {selectedHousing.pictures.length > 1 ? (
+        <Gallery pictures={selectedHousing.pictures} />
+      ) : (
+        <div
+          className="housing-cover"
+          style={{
+            backgroundImage: `url(${selectedHousing.cover})`,
+          }}
+        ></div>
+      )}
       <div className="housing-header">
         <h3 className="housing-title">{selectedHousing.title}</h3>
         <div className="host-container">

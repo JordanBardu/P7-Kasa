@@ -2,7 +2,6 @@
 
 
 ## TODO
-- Faire le composant de rating
-- Faire le carrousel
+- Trouver une solution pour collapse (github)
 - Eviter les duplicatas css (par ex pour le style de collapse)
 - Enlever commentaires

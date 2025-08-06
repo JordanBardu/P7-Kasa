@@ -13,11 +13,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <div className="layout">
-        <div
-          style={{
-            width: "100%",
-          }}
-        >
+        <div className="container">
           <MainMenu />
           <Routes>
             <Route path="/" element={<Home />} />
