@@ -1,7 +1,7 @@
 function MainBanner({ bannerText, imageSrc }) {
   return (
     <div
-      className="main-banner-container main-container"
+      className="main-banner-container"
       style={{
         backgroundImage: `url(${imageSrc})`,
         backgroundRepeat: "no-repeat",

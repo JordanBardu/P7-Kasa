@@ -5,7 +5,7 @@ import logo from "../../assets/images/LOGO.png";
 function MainMenu() {
   return (
     <>
-      <div className="main-container">
+      <div>
         <nav className="main-menu">
           <img src={logo} alt="Logo" />
           <ul>

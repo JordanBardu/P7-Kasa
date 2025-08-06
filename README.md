@@ -6,4 +6,3 @@
 - Faire le carrousel
 - Eviter les duplicatas css (par ex pour le style de collapse)
 - Enlever commentaires
-- Centrer homepage

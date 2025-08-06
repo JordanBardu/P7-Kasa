@@ -7,7 +7,7 @@ function HousingGrid() {
   };
 
   return (
-    <div className="grid-container main-container">
+    <div className="grid-container">
       {logements.map((logement) => (
         <Card item={logement} onClick={() => handleCardClick(logement.id)} />
       ))}
