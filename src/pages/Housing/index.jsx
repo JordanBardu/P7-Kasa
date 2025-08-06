@@ -3,6 +3,7 @@ import logements from "../../assets/logements.json";
 import Collapse from "../../components/Collapse/index.jsx";
 import NotFound from "../NotFound/index.jsx";
 import "../../assets/style/housing.css";
+import HousingRating from "../../components/HousingRating/index.jsx";
 
 function Housing() {
   let params = useParams();
@@ -19,23 +20,27 @@ function Housing() {
         className="housing-cover"
         style={{ backgroundImage: `url(${selectedHousing.cover})` }}
       ></div>
-      <h3 className="housing-title">{selectedHousing.title}</h3>
-      <p className="housing-location">{selectedHousing.location}</p>
-      <ul className="housing-tags">
-        {selectedHousing.tags.map((tag, index) => (
-          <li key={index} className="housing-tag">
-            {tag}
-          </li>
-        ))}
-      </ul>
-      <div className="host-container">
-        <p>{selectedHousing.host.name}</p>
-        <div
-          className="host-picture"
-          style={{ backgroundImage: `url(${selectedHousing.host.picture})` }}
-        ></div>
+      <div className="housing-header">
+        <h3 className="housing-title">{selectedHousing.title}</h3>
+        <div className="host-container">
+          <p>{selectedHousing.host.name}</p>
+          <div
+            className="host-picture"
+            style={{ backgroundImage: `url(${selectedHousing.host.picture})` }}
+          ></div>
+        </div>
       </div>
-      <p>rating : {selectedHousing.rating}</p>
+      <p className="housing-location">{selectedHousing.location}</p>
+      <div className="housing-infos">
+        <ul className="housing-tags">
+          {selectedHousing.tags.map((tag, index) => (
+            <li key={index} className="housing-tag">
+              {tag}
+            </li>
+          ))}
+        </ul>
+        <HousingRating value={selectedHousing.rating} />
+      </div>
       <div className="housing-details">
         <Collapse
           key={`${selectedHousing.title}`}
