@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import "../../assets/style/mainmenu.css";
+import "../../assets/style/components/mainmenu.css";
 import logo from "../../assets/images/LOGO.png";
 
 function MainMenu() {
@@ -7,7 +7,7 @@ function MainMenu() {
     <>
       <div>
         <nav className="main-menu">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className="main-logo" />
           <ul>
             <li>
               <NavLink

@@ -26,3 +26,23 @@ a.active {
     font-weight: 500;
     font-size: 24px;
 }
+
+@media (max-width: 375px) {
+    .main-logo {
+        width: 40%;
+        height: 3%;
+    }
+
+    .main-menu ul {
+        margin-left: 0;
+        gap: 26px;
+    }
+
+    .main-menu li {
+        font-size: 12px;
+    }
+
+    .main-menu {
+        padding-top: 20px;
+    }
+}

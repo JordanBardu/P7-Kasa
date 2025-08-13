@@ -2,7 +2,7 @@ import MainBanner from "../../components/MainBanner/index.jsx";
 import bannerSrc from "../../assets/images/aboutbanner.jpg";
 import Collapse from "../../components/Collapse/index.jsx";
 import content from "./about_content.json";
-import "../../assets/style/about.css";
+import "../../assets/style/pages/about.css";
 
 function About() {
   return (

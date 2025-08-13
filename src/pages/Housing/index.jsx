@@ -1,8 +1,7 @@
-import { useParams } from "react-router";
+import { Navigate, useParams } from "react-router";
 import logements from "../../assets/logements.json";
 import Collapse from "../../components/Collapse/index.jsx";
-import NotFound from "../NotFound/index.jsx";
-import "../../assets/style/housing.css";
+import "../../assets/style/pages/housing.css";
 import HousingRating from "../../components/HousingRating/index.jsx";
 import Gallery from "../../components/Gallery/index.jsx";
 
@@ -12,7 +11,7 @@ function Housing() {
   const selectedHousing = logements.find((logement) => logement.id === id);
 
   if (!selectedHousing) {
-    return <NotFound />;
+    return <Navigate to="/not-found" replace />;
   }
 
   return (

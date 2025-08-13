@@ -1,3 +1,5 @@
+import "../../assets/style/components/mainbanner.css";
+
 function MainBanner({ bannerText, imageSrc }) {
   return (
     <div

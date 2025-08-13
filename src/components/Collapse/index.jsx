@@ -13,7 +13,7 @@ function Collapse({ title, type, content }) {
       <div className="collapse-title-container" onClick={handleCollapse}>
         <h2 className="collapse-title">{title}</h2>
         <img
-          className="arrow-container"
+          className={`${isOpen ? "arrow-container-rotate" : "arrow-container"}`}
           src={arrowSrc}
           alt="Flèche de déroulement"
         />

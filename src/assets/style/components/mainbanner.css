@@ -1,0 +1,34 @@
+.main-banner-container {
+    height: 24vh;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3.5%;
+}
+
+.main-banner-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 375px) {
+    .main-banner-container h1 {
+        font-size: 24px;
+        text-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 16px;
+        padding-right: 90px;
+    }
+
+    .main-banner-container {
+        height: 12vh;
+    }
+}

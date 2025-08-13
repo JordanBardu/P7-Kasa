@@ -1,4 +1,4 @@
-import "../../assets/style/homepage.css";
+import "../../assets/style/pages/homepage.css";
 import MainBanner from "../../components/MainBanner/index.jsx";
 import HousingGrid from "../../components/HousingGrid/index.jsx";
 import bannerSrc from "../../assets/images/homebanner.png";

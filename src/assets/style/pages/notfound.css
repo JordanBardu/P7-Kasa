@@ -30,3 +30,19 @@
   font-family: Montserrat;
   font-weight: 500;
 }
+
+@media (max-width: 375px) {
+  .notfound-title {
+    font-size: 96px;
+  }
+
+  .notfound-text {
+    font-size: 18px;
+    text-align: center;
+    text-wrap: wrap;
+  }
+
+  .back-button {
+    font-size: 14px;
+  }
+}
