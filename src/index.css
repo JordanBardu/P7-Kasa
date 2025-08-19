@@ -14,6 +14,10 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -69,6 +73,15 @@ button:focus-visible {
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: Montserrat;
+}
+
+@media (max-width: 375px) {
+  .footer {
+    padding: 60px 120px;
+    font-size: 12px;
+  }
 }
 
 .grey-filter {
@@ -91,7 +104,7 @@ button:focus-visible {
 
 .container {
   width: 90%;
-  /*margin: auto;*/
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
 }

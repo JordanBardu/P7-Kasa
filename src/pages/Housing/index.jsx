@@ -28,13 +28,6 @@ function Housing() {
       )}
       <div className="housing-header">
         <h3 className="housing-title">{selectedHousing.title}</h3>
-        <div className="host-container">
-          <p>{selectedHousing.host.name}</p>
-          <div
-            className="host-picture"
-            style={{ backgroundImage: `url(${selectedHousing.host.picture})` }}
-          ></div>
-        </div>
       </div>
       <p className="housing-location">{selectedHousing.location}</p>
       <div className="housing-infos">
@@ -45,7 +38,18 @@ function Housing() {
             </li>
           ))}
         </ul>
-        <HousingRating value={selectedHousing.rating} />
+        <div className="housing-host">
+          <HousingRating value={selectedHousing.rating} />
+          <div className="host-container">
+            <p>{selectedHousing.host.name}</p>
+            <div
+              className="host-picture"
+              style={{
+                backgroundImage: `url(${selectedHousing.host.picture})`,
+              }}
+            ></div>
+          </div>
+        </div>
       </div>
       <div className="housing-details">
         <Collapse

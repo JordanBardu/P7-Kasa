@@ -45,4 +45,9 @@
   .back-button {
     font-size: 14px;
   }
+
+  .not-found-container {
+    margin-top: 23%;
+    margin-bottom: 23%;
+  }
 }

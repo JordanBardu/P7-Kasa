@@ -19,6 +19,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 375px) {
+  .collapse-title-container {
+    padding: 2%;
+  }
+}
+
 .collapse-title {
   font-family: Montserrat;
   font-weight: 700;
@@ -29,6 +35,7 @@
   background-color: rgba(246, 246, 246, 1);
   border-radius: 0 0 5px 5px;
   max-height: 0;
+  /*voir si ca bloque pas l'animation*/
   overflow: hidden;
   transition: max-height 0.5s;
 }
@@ -45,7 +52,7 @@
   font-size: 18px;
   color: black;
   height: 100%;
-  padding: 25px 25px 2px 20px;
+  padding: 0px 25px 2px 20px;
   text-wrap: wrap;
 }
 
@@ -78,5 +85,9 @@
   }
   .collapse-title {
     font-size: 13px;
+  }
+
+  .collapse-text, .collapse-list {
+    font-size: 12px;
   }
 }
