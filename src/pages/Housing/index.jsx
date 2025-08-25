@@ -26,19 +26,21 @@ function Housing() {
           }}
         ></div>
       )}
-      <div className="housing-header">
-        <h3 className="housing-title">{selectedHousing.title}</h3>
-      </div>
-      <p className="housing-location">{selectedHousing.location}</p>
-      <div className="housing-infos">
-        <ul className="housing-tags">
-          {selectedHousing.tags.map((tag, index) => (
-            <li key={index} className="housing-tag">
-              {tag}
-            </li>
-          ))}
-        </ul>
-        <div className="housing-host">
+      <div className="infos-container">
+        <div className="housing-infos">
+          <div className="housing-header">
+            <h3 className="housing-title">{selectedHousing.title}</h3>
+          </div>
+          <p className="housing-location">{selectedHousing.location}</p>
+          <ul className="housing-tags">
+            {selectedHousing.tags.map((tag, index) => (
+              <li key={index} className="housing-tag">
+                {tag}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="host-infos">
           <HousingRating value={selectedHousing.rating} />
           <div className="host-container">
             <p>{selectedHousing.host.name}</p>
@@ -59,7 +61,7 @@ function Housing() {
           content={selectedHousing.description}
         />
         <Collapse
-          key={`${selectedHousing.title}`}
+          key={`${selectedHousing.title}+${selectedHousing.id}`}
           title="Équipements"
           type="list"
           content={selectedHousing.equipments}

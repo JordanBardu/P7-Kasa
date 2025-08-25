@@ -35,7 +35,6 @@
   background-color: rgba(246, 246, 246, 1);
   border-radius: 0 0 5px 5px;
   max-height: 0;
-  /*voir si ca bloque pas l'animation*/
   overflow: hidden;
   transition: max-height 0.5s;
 }

@@ -9,7 +9,11 @@ function HousingGrid() {
   return (
     <div className="grid-container">
       {logements.map((logement) => (
-        <Card item={logement} onClick={() => handleCardClick(logement.id)} />
+        <Card
+          key={logement.id}
+          item={logement}
+          onClick={() => handleCardClick(logement.id)}
+        />
       ))}
     </div>
   );
